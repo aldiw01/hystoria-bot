@@ -1,0 +1,24 @@
+{
+  "name": "hystoria-bot",
+  "version": "0.1.0",
+  "description": "Hysteria BOT",
+  "author": "Aldi Wiranata",
+  "copyright": "Copyright 2019 - Aldi Wiranata",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aldiw01/hystoria-bot.git"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.0.0",
+    "telegraf": "^3.34.1"
+  },
+  "bugs": {
+    "url": "https://github.com/aldiw01/hystoria-bot/issues"
+  },
+  "scripts": {
+    "start": "node src/index",
+    "start-dev": "nodemon src/index"
+  }
+}
