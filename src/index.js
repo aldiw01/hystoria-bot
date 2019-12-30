@@ -1,5 +1,6 @@
 require('dotenv/config')
 
+const http = require('http');
 const Telegraf = require('telegraf')
 const axios = require('axios')
 
@@ -106,6 +107,11 @@ bot.use(async (ctx, next) => {
 bot.on('text', (ctx) => ctx.reply('Hello World'))
 
 // bot.telegram.sendMessage(758713395, "Test send chat\n\nAldi")
+
+const PORT = process.env.PORT || 5000;
+http.createServer(() => {
+	console.log(`HTTP listen at  ${PORT}`)
+}).listen(PORT)
 
 try {
 	bot.launch()
